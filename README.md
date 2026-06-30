@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Wild Visuals**, a creative practice specializing in photo retouching, video editing, and graphic design for brands, businesses, and personal projects.
 
-Live site: _add your Vercel URL here once deployed_
+Live site: [wildvisuals-port.vercel.app](https://wildvisuals-port.vercel.app/)
 
 ## What's inside
 
