@@ -466,15 +466,27 @@ section{ position:relative; z-index:2; padding:120px var(--pad); max-width:var(-
   display:flex; justify-content:center; gap:16px; flex-wrap:wrap;
 }
 .social-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
   font-size:13px;
   padding:12px 22px;
   border:1px solid var(--line);
   border-radius:100px;
   transition:all 0.25s ease;
 }
+.social-icon{
+  width:18px; height:18px;
+  flex-shrink:0;
+  color:var(--paper-dim);
+  transition:color 0.25s ease;
+}
 .social-link:hover{
   border-color:var(--paper);
   background:var(--paper);
+  color:var(--ink);
+}
+.social-link:hover .social-icon{
   color:var(--ink);
 }
 
