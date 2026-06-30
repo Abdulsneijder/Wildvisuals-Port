@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wild Visuals — Photo Retouching &amp; Creative Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<canvas id="particleCanvas" class="particle-canvas"></canvas>
+<div class="scope-glow"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="nav-logo">
+    <img src="images/logo-transparent.png" alt="Wild Visuals logo" class="nav-logo-img">
+    <span class="nav-logo-text">WILD<span class="logo-dot">/</span>VISUALS</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#about"><span class="nav-tag">01</span>About</a>
+    <a href="#work"><span class="nav-tag">02</span>Work</a>
+    <a href="#skills"><span class="nav-tag">03</span>Skills</a>
+    <a href="#contact"><span class="nav-tag">04</span>Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Start a project</a>
+  <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-grain"></div>
+  <p class="eyebrow mono">PHOTO RETOUCH — VIDEO EDIT — GRAPHIC DESIGN</p>
+  <h1 class="hero-title">
+    <span class="line">MAKE IT</span>
+    <span class="line gradient-text">UNFORGETTABLE</span>
+  </h1>
+  <p class="hero-sub">
+    I'm a creative professional turning raw shots and rough cuts into polished, scroll-stopping
+    visuals for brands, businesses, and personal projects.
+  </p>
+  <div class="hero-actions">
+    <a href="#work" class="btn btn-primary">View the work</a>
+    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+  </div>
+
+  <div class="hero-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>RETOUCH</span><span class="dot">●</span>
+      <span>EDIT</span><span class="dot">●</span>
+      <span>GRADE</span><span class="dot">●</span>
+      <span>DESIGN</span><span class="dot">●</span>
+      <span>RETOUCH</span><span class="dot">●</span>
+      <span>EDIT</span><span class="dot">●</span>
+      <span>GRADE</span><span class="dot">●</span>
+      <span>DESIGN</span><span class="dot">●</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-head">
+    <span class="section-tag mono">01 / ABOUT</span>
+    <h2 class="section-title">Who's behind the<br>retouch brush.</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p class="about-intro mono">HI, I'M ABDULLAH — THE PERSON BEHIND WILD VISUALS.</p>
+      <p class="about-lead">
+        I'm a creative professional experienced in photo retouching, video editing, and graphic
+        design for brands, businesses, and personal projects. Whether you need polished visuals,
+        engaging video content, or eye-catching designs — I can help.
+      </p>
+      <p>
+        I'm skilled in photo enhancement and retouching, cinematic video editing, and creative
+        design that holds up across platforms. I handle projects from start to finish, and clear
+        communication stays at the center of how I work — because the best results come from
+        staying aligned every step of the way.
+      </p>
+
+      <div class="working-style">
+        <span class="style-pill">Clear Communicator</span>
+        <span class="style-pill">Accountable for Outcomes</span>
+      </div>
+    </div>
+
+    <div class="about-side">
+      <div class="founder-frame">
+        <img src="images/founder-photo.jpg" alt="Abdullah, founder of Wild Visuals" class="founder-photo">
+        <div class="founder-caption">
+          <span class="founder-name">Abdullah <span class="gradient-text">"Wild"</span></span>
+          <span class="founder-role mono">FOUNDER / CREATIVE DIRECTOR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="section-head">
+    <span class="section-tag mono">02 / WORK</span>
+    <h2 class="section-title">Selected<br>retouches.</h2>
+    <p class="section-note">A curated set of recent photo work. Click any frame to view full size.</p>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <figure class="gallery-item size-tall">
+      <div class="img-wrap"><img src="images/work-01.jpg" alt="Beaded headpiece portrait retouch, jungle backdrop"></div>
+      <figcaption><span class="mono">01</span> Beauty retouch — beaded headpiece</figcaption>
+    </figure>
+    <figure class="gallery-item size-tall">
+      <div class="img-wrap"><img src="images/work-02.jpg" alt="Studio portrait, deep red tone grade"></div>
+      <figcaption><span class="mono">02</span> Color grade — studio portrait</figcaption>
+    </figure>
+    <figure class="gallery-item size-square">
+      <div class="img-wrap"><img src="images/work-03.jpg" alt="Editorial portrait against red and yellow fabric backdrop"></div>
+      <figcaption><span class="mono">03</span> Editorial — color block set</figcaption>
+    </figure>
+    <figure class="gallery-item size-square">
+      <div class="img-wrap"><img src="images/work-04.jpg" alt="Studio portrait in orange and white styled outfit"></div>
+      <figcaption><span class="mono">04</span> Studio retouch — styled portrait</figcaption>
+    </figure>
+    <figure class="gallery-item size-wide">
+      <div class="img-wrap"><img src="images/work-05.jpg" alt="Carnival costume portrait with pink and blue feathers"></div>
+      <figcaption><span class="mono">05</span> Color &amp; light — carnival costume</figcaption>
+    </figure>
+    <figure class="gallery-item size-tall">
+      <div class="img-wrap"><img src="images/work-06.jpg" alt="Close-up beauty retouch, deep red backdrop"></div>
+      <figcaption><span class="mono">06</span> Skin retouch — close-up beauty</figcaption>
+    </figure>
+    <figure class="gallery-item size-tall">
+      <div class="img-wrap"><img src="images/work-07.jpg" alt="Seated portrait in African print fabric and headwrap"></div>
+      <figcaption><span class="mono">07</span> Editorial retouch — print &amp; texture</figcaption>
+    </figure>
+    <figure class="gallery-item size-square">
+      <div class="img-wrap"><img src="images/work-08.jpg" alt="Outdoor portrait, curly hair, burgundy dress"></div>
+      <figcaption><span class="mono">08</span> Natural light retouch</figcaption>
+    </figure>
+    <figure class="gallery-item size-square">
+      <div class="img-wrap"><img src="images/work-09.jpg" alt="Outdoor portrait, striped top, soft bokeh"></div>
+      <figcaption><span class="mono">09</span> Portrait retouch — soft bokeh</figcaption>
+    </figure>
+    <figure class="gallery-item size-wide">
+      <div class="img-wrap"><img src="images/work-10.jpg" alt="Composite portrait with cigarette smoke effect"></div>
+      <figcaption><span class="mono">10</span> Composite design — smoke effect</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="section-head">
+    <span class="section-tag mono">03 / SKILLS</span>
+    <h2 class="section-title">What I bring<br>to the frame.</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="skill-index mono">PR</span>
+      <h3>Photo Retouching</h3>
+      <p>Skin, color, light &amp; detail work that still looks like a photograph.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-index mono">VE</span>
+      <h3>Video Editing</h3>
+      <p>Cinematic cuts, pacing, and color grading built for the platform it lives on.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-index mono">VA</span>
+      <h3>Video Annotation</h3>
+      <p>Precise, structured labeling and tagging for video datasets and review.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-index mono">GD</span>
+      <h3>Graphic Design</h3>
+      <p>Brand-ready visuals, social assets, and layouts that earn a second look.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-index mono">PH</span>
+      <h3>Photography</h3>
+      <p>An eye for composition and light that carries through into every edit.</p>
+    </div>
+    <div class="skill-card">
+      <span class="skill-index mono">PD</span>
+      <h3>Presentation Design</h3>
+      <p>Decks and visual presentations built to hold a room's attention.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="section-tag mono">04 / CONTACT</span>
+    <h2 class="contact-title">Got a project<br><span class="gradient-text">worth retouching?</span></h2>
+    <p class="contact-sub">Tell me what you're working on — I usually reply within a day.</p>
+
+    <a href="mailto:abduan1089@gmail.com" class="contact-email">abduan1089@gmail.com</a>
+
+    <div class="social-row">
+      <a href="mailto:abduan1089@gmail.com" class="social-link">
+        <span class="mono">Email</span>
+      </a>
+      <a href="https://wa.me/2347066346894" target="_blank" rel="noopener noreferrer" class="social-link">
+        <span class="mono">WhatsApp</span>
+      </a>
+      <a href="https://www.linkedin.com/in/abduan089" target="_blank" rel="noopener noreferrer" class="social-link">
+        <span class="mono">LinkedIn</span>
+      </a>
+      <a href="https://x.com/abdulsneijder" target="_blank" rel="noopener noreferrer" class="social-link">
+        <span class="mono">X / Twitter</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span class="mono">WILD VISUALS © 2026</span>
+  <span class="mono">Built with care, frame by frame.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
